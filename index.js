@@ -5,7 +5,7 @@ const weatherDetails=document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 search.addEventListener("click",()=>{
-    const API_KEY='9e1ec8106550fd4e17d57c593eb9ce2c';
+    const API_KEY='API_KEY';
     const city=document.querySelector('.search-box input').value;
     if(city==='') return ;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
